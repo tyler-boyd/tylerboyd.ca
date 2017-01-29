@@ -1,0 +1,32 @@
+$fa-font-path:        "../fonts/fontawesome"
+@import "font-awesome"
+@import "../../node_modules/materialize-css/sass/components/_mixins.scss"
+@import "../../node_modules/materialize-css/sass/components/_color.scss"
+@import "../../node_modules/materialize-css/sass/components/_variables.scss"
+
+$primary-color: #247BA0
+$primary-color-light: lighten($primary-color, 15%)
+$primary-color-dark: darken($primary-color, 15%)
+
+$secondary-color: #70C1B3
+
+
+
+@import "../../node_modules/materialize-css/sass/materialize.scss"
+
+.primary
+  color: $primary-color !important
+.primary-bg
+  background-color: $primary-color !important
+
+.secondary
+  color: $secondary-color
+.secondary-bg
+  background-color: $secondary-color
+
+#index-banner
+  background-color: #FFFAE5
+footer.page-footer
+  background-color: lighten($primary-color, 7%)
+  color: rgba(255, 255, 255, 0.9)
+  @extend .light
