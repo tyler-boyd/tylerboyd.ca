@@ -1,4 +1,5 @@
 jQuery = $ = require('jquery');
+Hammer = require('hammerjs');
 
 require('materialize-css');
 

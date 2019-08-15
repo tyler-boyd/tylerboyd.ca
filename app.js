@@ -29,7 +29,9 @@ app.use(require('node-sass-middleware')({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.get('/js/bundle.js', browserify(['jquery', 'hammerjs', 'materialize-css', {'./client/main.js': {run: true}}]));
+const opts = {};
+opts[__dirname + '/client/main.js'] = {run: true};
+app.get('/js/bundle.js', browserify(['jquery', 'hammerjs', 'materialize-css', opts]));
 
 
 app.use('/', index);
@@ -47,6 +49,7 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
+  console.log("Error: ", err.message);
 
   // render the error page
   res.status(err.status || 500);
