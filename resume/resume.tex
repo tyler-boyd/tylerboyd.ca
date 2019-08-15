@@ -1,0 +1,120 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+% USEFUL LINKS:
+% https://www.linkedin.com/in/tyler-boyd-43162179/
+% https://github.com/tyler-boyd
+% https://tylerboyd.ca/
+
+\documentclass[line, centered]{res} 
+\usepackage[top=0.5in, right=1.5in, left=1in, bottom=0.5in]{geometry}
+\usepackage{tabularx}
+% the margin option causes section titles to appear to the left of body text 
+%\textwidth=5.0in % increase textwidth to get smaller right margin
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+%\usepackage[scaled]{helvet}
+%\renewcommand*\familydefault{\sfdefault}
+%\usepackage[T1]{fontenc}
+
+\begin{document} 
+ 
+\name{\LARGE Tyler Boyd}%\\[12pt]} % the \\[12pt] adds a blank line after name
+\title{Hi}
+
+ 
+\begin{resume} 
+ 
+\hspace{0.5cm} \begin{tabularx}{\textwidth}{l c r}
+	{\bf \large Present Address} & {\bf \large Contact Info} & {\bf \large Permanent Address} \\
+	36 Lisgar St  (Unit 1112) & https://tylerboyd.ca & 34 Arundel Ave \\
+	Toronto, ON M6J 0C7 & me@tylerboyd.ca & Ottawa, ON K1K 0B6\\
+	Canada			 & (613) 799-6668 & Canada\\
+
+\end{tabularx}
+ 
+%\section{Education} 
+\textbf{Bachelor of Software Engineering, Class of 2019} \hfill University of Waterloo
+ 
+
+\section{Experience}
+ {\bf DevOps Coop,} TradeRev, Toronto, ON \hfill Fall 2018\\[-8pt]
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Fixed day-to-day issues with AWS infrastructure, application, and Jenkins pipelines
+ \item Gained familiarity with Terraform and Terragrunt to accomplish any infrastructure changes
+ \item Developed a Jenkins pipeline for the creation of entire environments
+ \item Led the team on integrating the AWS accounts with Splunk for SOX compliance
+ \item Built pipelines for deploying new kinds of projects (AWS Glue ETL jobs, ECS/Fargate applications)
+ \end{itemize}
+
+ {\bf Developer Intern,} Shopify, Ottawa, ON \hfill Summer 2015, Winter 2016, Summer 2017\\[-8pt]
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Designed and developed a tax services API integration with Avalara
+ \item Wrote resilient code that failed fast \& safe in the case of network failures/service outages
+ \item Implemented front end design for installation and managing settings
+ \item Developed data extractors to move data into hue for financial analytics
+ \item Implemented ETL code for shipping label price adjustments
+ \end{itemize}
+
+ {\bf Founder,} PromoSuite, Ottawa, ON \hfill Summer 2013 \& 2014, Fall 2016, Winter 2018\\[-8pt]
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Created a comprehensive Ruby on Rails application and API
+ \item Developed a functional, fast, and beautiful frontend using Material \& React
+ \item Managed the system admin tasks (setting up \& managing multiple servers)
+ \item Designed \& implemented the web application (database structure, MVC architecture,\\
+ 		routing patterns, authentication, eCommerce integration, admin dashboard, etc)
+ \item Helped grow the business to millions in annual sales over the platform
+ \end{itemize}
+
+
+{\bf Ruby on Rails Intern,} NiteRoll Inc., Ottawa, ON \hfill Summer 2012
+\begin{itemize} \itemsep -2pt
+	\item Assisted main Rails developer in writing tests and fixing bugs
+    \item Tests used RSpec, Capybara, FactoryGirl and various benchmarking tools
+    \item Refactored hundreds of lines of code to improve readability and stability
+    \item Developed a workflow for client-side cropping of profile pictures
+    \item Was given a bonus for exemplary performance and quick learning
+\end{itemize}
+
+
+% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
+\section{Technical Skills}
+   \begin{tabular}{l l}
+    Languages: & Ruby, JavaScript, SQL, HTML5, CSS, Java, C, C++
+    \\
+    Technologies: &  Ruby on Rails, React, Bootstrap, PostgreSQL, GitHub
+    \\
+    Tools: & Jenkins, Docker, AWS, Terraform, Unix
+    \\
+    Methodologies: & Experienced with Agile Development
+    \\
+    Fields of interest: & Full-stack web, DevOps, Real-time embedded development (ARM), Security
+ \end{tabular}
+
+
+\section{Leadership   Activities} 
+         {\bf Team Organizer,} Hack The North, Waterloo, ON    \hfill         September 2014
+         \begin{itemize} \itemsep -2pt
+              \item Found and interviewed people to form a skilled team of 4 people for this Hackathon
+              \item Prepared \& planned the implementation of a cloud-based media player to be built in 36 hours
+              \item Led \& motivated the team to complete the project within the time frame
+
+		 \end{itemize}
+
+		{\bf Technical Lead,} PromoSuite \hfill   2013-2014
+         \begin{itemize} \itemsep -2pt
+                 \item Was responsible for everything related to the web application
+                 \item Configured automatic testing \& deployment for the virtual servers
+		 \item Talked with clients to determine the needs of the project and how to satisfy them
+	\end{itemize}
+
+%\section{Relevant Courses} 
+%CS 349 - User Interfaces\\
+%SE 465 - Software Testing and Quality Assurance\\
+%CS 452 - Real-time Programming (aka "Trains") \\
+%CS 458 - Computer Security and Privacy
+\end{resume} 
+\end{document} 
+
+
+
