@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: tylerboydca
-        image: tylerboydca:<TAG>
+        image: 354234691964.dkr.ecr.us-east-1.amazonaws.com/tylerboydca:<TAG>
         ports:
         - containerPort: 3000
