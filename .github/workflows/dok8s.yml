@@ -23,9 +23,7 @@ jobs:
         mask-aws-account-id: false
 
     - name: Build container image
-      uses: actions/docker/cli@master
-      with:
-        args: build -t tylerboydca:$(echo $GITHUB_SHA | head -c7) .
+      run: docker build -t tylerboydca:$(echo $GITHUB_SHA | head -c7) .
 
     - name: Amazon ECR "Login" Action for GitHub Actions
       uses: aws-actions/amazon-ecr-login@v1.0.1
@@ -34,9 +32,7 @@ jobs:
       run: TAG=$(echo $GITHUB_SHA | head -c7) && docker tag tylerboydca:$TAG 354234691964.dkr.ecr.us-east-1.amazonaws.com/tylerboydca:$TAG
 
     - name: Push image to ECR
-      uses: actions/docker/cli@master
-      with:
-        args: push 354234691964.dkr.ecr.us-east-1.amazonaws.com/tylerboydca
+      run: docker push 354234691964.dkr.ecr.us-east-1.amazonaws.com/tylerboydca
 
     - name: Update deployment file
       run: TAG=$(echo $GITHUB_SHA | head -c7) && sed -i 's|<IMAGE>|andrewsomething/static-example:'${TAG}'|' $GITHUB_WORKSPACE/config/deployment.yml
