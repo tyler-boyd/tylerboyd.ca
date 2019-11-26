@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tylerboydca-deployment
+  labels:
+    app: tylerboydca
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tylerboydca
+  template:
+    metadata:
+      labels:
+        app: tylerboydca
+    spec:
+      containers:
+      - name: tylerboydca
+        image: tylerboydca:<TAG>
+        ports:
+        - containerPort: 3000
