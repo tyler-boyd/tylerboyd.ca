@@ -16,6 +16,10 @@ html(lang='en')
       .nav-wrapper.container
         a#logo-container.brand-logo(href='/') Tyler Boyd
         ul.right.hide-on-med-and-down
+          li(class=active === 'blog' ? 'active' : '')
+            a(href='/blog')
+              i.material-icons.left post_add
+              | &ensp;Blog
           li
             a(href='tyler_boyd.pdf', target='_blank')
               i.fa.fa-cloud-download
@@ -30,6 +34,10 @@ html(lang='en')
               | &ensp;LinkedIn
 
         ul#nav-mobile.side-nav
+          li
+            a(href='/blog')
+              i.material-icons.left post_add
+              | &ensp;Blog
           li
             a(href='tyler_boyd.pdf', target='_blank')
               i.fa.fa-cloud-download

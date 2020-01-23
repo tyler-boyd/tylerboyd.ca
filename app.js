@@ -4,9 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+const marked = require('marked');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+const blog = require('./routes/blog');
 
 var browserify = require("browserify-middleware");
 
@@ -36,6 +38,7 @@ app.get('/js/bundle.js', browserify(['jquery', 'hammerjs', 'materialize-css', op
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/blog', blog);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
