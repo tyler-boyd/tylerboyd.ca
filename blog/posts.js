@@ -1,6 +1,14 @@
 const fs = require('fs');
 const marked = require('marked');
 
+const ideas = [
+  'Transforming an Engineering culture',
+  'Writing good UI tests',
+  'Integrating Quickbooks into your Rails app',
+  'Wholesome CI/CD pipelines',
+  'Building Robust Web Apps in Rust',
+];
+
 const posts = [{
   slug: 'rails-k8s',
   title: 'Ruby on Rails on Kubernetes (with CI/CD)',
