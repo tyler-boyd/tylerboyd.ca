@@ -15,7 +15,7 @@
     "hammerjs": "^2.0.8",
     "jade": "~1.11.0",
     "jquery": "^3.4.1",
-    "marked": "^0.8.0",
+    "marked": "^4.0.10",
     "materialize-css": "~0.100.0",
     "morgan": "~1.7.0",
     "node-sass-middleware": "^0.11.0",
