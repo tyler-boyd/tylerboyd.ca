@@ -1,0 +1,30 @@
+.post {
+  @apply pb-16;
+}
+
+.post h1 {
+  @apply text-2xl font-bold mb-8;
+}
+
+.post h2 {
+  @apply text-xl font-bold mt-8 mb-4;
+}
+
+.post h3 {
+  @apply text-lg font-bold;
+}
+
+.post p {
+}
+
+.post ol {
+  @apply list-disc list-inside leading-relaxed;
+}
+
+.post pre {
+  @apply bg-slate-100 p-4 rounded my-4 overflow-auto;
+}
+
+.post code {
+  @apply bg-slate-100;
+}
