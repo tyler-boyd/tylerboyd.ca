@@ -44,6 +44,7 @@ export default function RootLayout({
                   className="flex items-center justify-center w-full p-2 gap-x-2 transition-all hover:bg-slate-300"
                   target={link.external ? "_blank" : undefined}
                   rel={link.external ? "noopener noreferrer" : undefined}
+                  prefetch={!link.external}
                 >
                   {link.name}
                   {link.external && <ExternalLinkIcon />}
